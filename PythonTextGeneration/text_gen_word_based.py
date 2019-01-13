@@ -7,7 +7,7 @@ import os
 import time
 import io
 
-path_to_file = 'g:\\net\\GuitarPro_to_TXT\\TXT\\output.txt'
+path_to_file = '.\\output.txt'
 f = io.open(path_to_file, mode="r", encoding="utf-8")
 text = f.read()
 
