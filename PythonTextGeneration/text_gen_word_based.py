@@ -97,7 +97,7 @@ model.compile(
     loss = tf.losses.sparse_softmax_cross_entropy)
 
 # Directory where the checkpoints will be saved
-checkpoint_dir = 'g:\\Serge\\Save\\Python\\RNN'
+checkpoint_dir = '.'
 # Name of the checkpoint files
 checkpoint_prefix = os.path.join(checkpoint_dir, "ckpt_{epoch}")
 
@@ -179,5 +179,5 @@ with open(".\\input.txt", mode="w", encoding="utf-8") as text_file:
     text_file.write(generated_text)
 
 
-os.chdir('g:\\net\\GuitarPro_to_TXT')
-os.system('"g:\\net\\GuitarPro_to_TXT\\MusicXML_to_TXT.exe 123"')
+os.chdir('.//..//Runtime')
+os.system('".//MusicXML_to_TXT.exe 123"')
