@@ -8,7 +8,7 @@ import os
 import time
 import io
 
-path_to_file = '.\\output.txt'
+path_to_file = './output.txt'
 f = io.open(path_to_file, mode="r", encoding="utf-8")
 text = f.read()
 
@@ -176,9 +176,9 @@ model.build(tf.TensorShape([1, None]))
 
 generated_text = generate_text(model, start_string="E3û E3û")
 
-with open(".\\input.txt", mode="w", encoding="utf-8") as text_file:
+with open("./input.txt", mode="w", encoding="utf-8") as text_file:
     text_file.write(generated_text)
 
 
-os.chdir('.//..//Runtime')
-os.system('".//MusicXML_to_TXT.exe 123"')
+os.chdir('./../Runtime')
+os.system('"./MusicXML_to_TXT.exe 123"')
