@@ -175,7 +175,7 @@ model.build(tf.TensorShape([1, None]))
 
 generated_text = generate_text(model, start_string="E3û E3û")
 
-with open("g:\\net\\GuitarPro_to_TXT\\GeneratedTXT\\input.txt", mode="w", encoding="utf-8") as text_file:
+with open(".\\input.txt", mode="w", encoding="utf-8") as text_file:
     text_file.write(generated_text)
 
 
